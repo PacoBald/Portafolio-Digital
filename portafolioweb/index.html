@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./js/script.js">
+    <link rel="manifest" href="manifiesto.json">
+</head>
+<body>
+ <!-- Fondo Glowing -->
+<div class="glowing">
+  <span style="--i:1;"></span>
+  <span style="--i:2;"></span>
+  <span style="--i:3;"></span>
+</div>
+
+<div class="glowing">
+  <span style="--i:1;"></span>
+  <span style="--i:2;"></span>
+  <span style="--i:3;"></span>
+</div>
+
+<div class="glowing">
+  <span style="--i:1;"></span>
+  <span style="--i:2;"></span>
+  <span style="--i:3;"></span>
+</div>
+
+<div class="glowing">
+  <span style="--i:1;"></span>
+  <span style="--i:2;"></span>
+  <span style="--i:3;"></span>
+</div>
+  
+    <!-- Icon Bar (Sidenav - hidden on small screens) -->
+    <nav class="w3-sidenav w3-center w3-small w3-hide-small ">
+      <!-- Avatar image in top left corner -->
+      <img src="./img/yohd4k.jpg" style="width:0%">
+      <a class="w3-padding-large w3-black amenu" href="#home"><i class="fa fa-home w3-xxlarge"></i><br>Inicio</a>
+      <a class="w3-padding-large w3-hover-black amenu" href="#about"><i class="fa fa-user w3-xxlarge"></i><br>Acerca</a>
+      <a class="w3-padding-large w3-hover-black amenu" href="#photos"><i class="fa fa-eye w3-xxlarge"></i><br>Proyectos</a>
+      <a class="w3-padding-large w3-hover-black amenu" href="#contact"><i class="fa fa-envelope w3-xxlarge"></i><br>Contacto</a>
+    </nav>
+    
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <ul class="w3-navbar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <li class="w3-left" style="width:25% !important"><a href="#">Inicio</a></li>
+        <li class="w3-left" style="width:25% !important"><a href="#about">Acerca</a></li>
+        <li class="w3-left" style="width:25% !important"><a href="#photos">Proyectos</a></li>
+        <li class="w3-left" style="width:25% !important"><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+    <script>
+      // Alternar visibilidad del menú en móviles
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+  
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    </script>
+      
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+    
+      <!-- Header/Home -->
+      <header class="w3-container w3-padding-32 w3-center" id="Inicio">
+        <h2 class="w3-text-light-grey">Título de la Imagen</h2> <!-- Título agregado aquí -->
+        <img src="./img/yohd4k.jpg" alt="boy" class="w3-image" style="width: 50%;">
+        <h1 class="w3-jumbo"><span class="w3-hide-small">BIENVENIDOS</span></h1>
+        <p>Soy Francisco Gonzalez 
+        Estudiante de la Universidad Tecnologica del Norte de Aguascalientes</p><br><br>
+    </header>
+    
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">Juan Francisco Gonzalez De La Rosa</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <h3 class="w3-text-light-grey">Biografia</h3>
+        <p>Soy estudiante de la Universidad Tecnologica del Norte de Aguascalientes, actualmente estoy cursando el 10 (decimo) cuatrimestre en la carrera de Licenciatura en Ingenieria en Entornos Virtuales y Negocios Digitales.
+          Me considero una persona activa,social, amigable, organizada y responsable con buenas relaciones interpersonales. Siempre tengo la mejor disposición para la realización
+          de mis labores. Busco un puesto donde pueda desempeñarme y mostrar mis habilidades aprendidas durante mi estancia académica <br /></p>
+    
+        <h3 class="w3-padding-16 w3-text-light-grey">Habilidades</h3>
+        <p class="w3-wide">Ingles</p><div class="w3-progress-container"><div class="w3-progressbar" style="width:70%"></div></div>
+        <p class="w3-wide">Programacion</p><div class="w3-progress-container"><div class="w3-progressbar" style="width:70%"></div></div>
+        <p class="w3-wide">Renderizacion</p><div class="w3-progress-container"><div class="w3-progressbar" style="width:90%"></div></div><br>
+        <p class="w3-wide">Edicion de Video</p><div class="w3-progress-container"><div class="w3-progressbar" style="width:90%"></div></div><br>
+        <p class="w3-wide">Sonido y Musica</p><div class="w3-progress-container"><div class="w3-progressbar" style="width:65%"></div></div><br>
+
+        <h3 class="w3-padding-16 w3-text-light-grey">Educacion</h3>
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+          <div class="w3-quarter w3-section"><span class="w3-xlarge">Cbtis 215</span><br>Tecnico en Ofimatica 2021</div>
+          <div class="w3-quarter w3-section"><span class="w3-xlarge">UTNA</span><br>Tecnico Superior Universitario en Entornos Virtuales y Negocios Digitales 2023</div>
+          <div class="w3-quarter w3-section"><span class="w3-xlarge">UTNA</span><br>Licenciatura en Ingenieria en Entornos Virtuales y Negocios Digitales 2025</div>
+        </div>
+    
+        <!-- Grid for pricing tables -->
+        <h3 class="w3-padding-16 w3-text-light-grey">Charges</h3>
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half w3-margin-bottom">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Professional</li>
+              <li class="w3-padding-16">Crime Fighting</li>
+              <li class="w3-padding-16">Villain Chasing</li>
+              <li class="w3-padding-16">Extortionist Take Down</li>
+              <li class="w3-padding-16">Kidnapper Neutralization</li>
+              <li class="w3-padding-16">
+                <h2>$ 10.000.000</h2>
+                <span class="w3-opacity">per month</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <a class="amenu" href="#contact"><button class="w3-btn w3-white w3-padding-large w3-hover-black">Sign Up</button></a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="w3-half">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Advanced</li>
+              <li class="w3-padding-16">Crime Obliteration</li>
+              <li class="w3-padding-16">Villain Crushing</li>
+              <li class="w3-padding-16">Extortionist Smack Down</li>
+              <li class="w3-padding-16">Kidnapper Vaporization</li>
+              <li class="w3-padding-16">
+                <h2>$ 25.000.000</h2>
+                <span class="w3-opacity">per month</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <a class="amenu" href="#contact"><button class="w3-btn w3-white w3-padding-large w3-hover-black">Sign Up</button></a>
+              </li>
+            </ul>
+          </div>
+        <!-- End Grid/Pricing tables -->
+        </div>
+    
+        <!-- Testimonials -->
+        <h3 class="w3-padding-24 w3-text-light-grey">Otras Experiencia</h3>
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half w3-margin-bottom">
+            <img src="./img/dj.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+            <p><span class="w3-large w3-margin-right"></span>Dj y Productor</p>
+            <p>Empece en el medio de la musica desde el 2016, trabajando con sonidos como SCRACTH y Sonido Alien. Estuve como DJ en los 2 sonidos, para despues en el 2017 empezar a hacer mi musica
+              comence con el genero de Guaracha y Tribal. Hasta el dia de Hoy dedico un poco de tiempo en seguir aprendiendo a componer dieferentes tipos de generos.</p>
+            </p><br>
+          </div>
+          <div class="w3-half">
+            <img src="./img/Paco4k.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+            <p><span class="w3-large w3-margin-right">Fotografo</span></p>
+            <p>No sere un gran fotografo, pero la intencion es la que cuenta. Algunas veces me gusta tomar fotos que para mi pueden ser agradables.</p>
+            <img src="./img/fondorosa.jpg" alt="Descripción de la imagen" style="width:100%; max-width:400px; height:auto;">
+            <img src="./img/IMG_6440.JPG" alt="Descripción de la imagen" style="width:100%; max-width:400px; height:auto;">
+          </div>
+          <div class="w3-half">
+            <img src="./img/editorvideo.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+            <p><span class="w3-large w3-margin-right"> Editor de Video  </span></p>
+            <p>Estuve editando videos para Ilustranima, una empresa de animacion la cual esta emprendiendo en el ambito de la animacion digital. Esta vez me toco editar videos de terror. Leyendas
+                populares de mexico y esta vez de la llorona.
+            </p>
+            <div class="video-container">
+                <video controls>
+                    <source src="./media/prop3 (1).mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+        </div>
+        <!-- End Grid/Pricing tables -->
+        </div>
+      <!-- End About Section -->
+      </div>
+    
+      <!-- Portfolio Section -->
+      <div class="w3-padding-64 w3-content" id="photos">
+        <h2 class="w3-text-light-grey">Proyectos</h2>
+        <hr style="width:200px" class="w3-opacity">
+    
+        <!-- Grid for photos -->
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half">
+            <img src="./img/killerrobots.jpg" style="width:100%">
+            <img src="./img/objeto pako1.jpg" style="width:100%">
+            <img src="./img/objeto pako2jpg.png" style="width:100%">
+            <img src="./img/objeto pako3.png" style="width:100%">
+            <img src="./img/persoanjes pako4.jpg" style="width:100%">
+            <img src="./img/IMG_6442.JPG" style="width:100%">
+          </div>
+          <div class="w3-half">
+            <img src="./img/escenario pako1.png" style="width:100%">
+            <img src="./img/render2.jpg" style="width:100%">
+            <img src="./img/render3.jpg" style="width:100%">
+            <img src="./img/escenario pako2.png" style="width:100%">
+            <img src="./img/persoanjes pako3.png" style="width:100%">
+            <img src="./img/persoanjes pako2.png" style="width:100%">
+            
+          </div>
+        <!-- End photo grid -->
+        </div>
+      <!-- End Portfolio Section -->
+      </div>
+    
+      <!-- Contact Section -->
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contacto<i class="fa fa-coffee fa-fw w3-text-white w3-xxlarge w3-margin-right"></i></h2>
+        <hr style="width:200px" class="w3-opacity">
+    
+        <div class="w3-section">
+          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Loreto, zacatecas</p>
+          <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> celular: +52 4962085476</p>
+          <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: Juanfranciscoglzdlrs@gmail.com</p>
+        </div><br>
+        <p>Enviame Mensaje si estas interesado en trabajar conmigo</p>
+    
+        <form action="form.asp" target="_blank">
+          <p><input class="w3-input w3-padding-16" placeholder="Name" required name="Name" type="text"></p>
+          <p><input class="w3-input w3-padding-16" placeholder="Email" required name="Email" type="text"></p>
+          <p><input class="w3-input w3-padding-16" placeholder="Subject" required name="Subject" type="text"></p>
+          <p><input class="w3-input w3-padding-16" placeholder="Message" required name="Message" type="text"></p>
+          <p>
+            <button class="w3-btn w3-light-grey w3-padding-large" type="submit">
+              <i class="fa fa-paper-plane"></i> Enviar Mensaje
+            </button>
+          </p>
+        </form>
+      <!-- End Contact Section -->
+      </div>
+    
+        <!-- Footer -->
+      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <a href="https://www.facebook.com/share/Pw5WD8VuBiL3x6XG/?mibextid=LQQJ4d" target="_blank"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
+        <a href="https://www.instagram.com/who_is_pacoo/profilecard/?igsh=MXNhbm42bGpzbTd0MA==" target="_blank"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
+        <a href="www.linkedin.com/in/juan-francisco-gonzález-de-la-rosa-66bb1228b" target="_blank"><i class="fa fa-linkedin w3-hover-text-purple"></i></a>
+      <!-- End footer -->
+      </footer>
+    
+    <!-- END PAGE CONTENT -->
+    </div>
+    <body>
+      <!-- Contenido de la página -->
+    
+      <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./service-worker.js')
+              .then((registration) => {
+                console.log('Service Worker registrado con éxito:', registration);
+              })
+              .catch((error) => {
+                console.log('Error al registrar el Service Worker:', error);
+              });
+          });
+        }
+      </script>
+    </body>
+        
+    </body>
+</html>
